@@ -24,6 +24,18 @@ def divcplx(a, b):
     img=((b[0]*a[1])-(a[0]*b[1]))/((a[1]**2)+(b[1]**2))
     return (real,img)
 
+#modulo de los complejos
+
+def modcplx(a,b):
+    res= (a**2+b**2)**(1/2)
+    return (res)
+
+#conjugado de complejos
+
+def conjcplx(a,b):
+    b=b*-1
+    return (a,b)
+
 
 
 # Press the green button in the gutter to run the script.
@@ -32,5 +44,6 @@ if __name__ == '__main__':
     print(multicplx((2,-2),(3,-2.3)))
     print(restacplx((3.5, 7), (4.2, 8)))
     print(divcplx((-2, 1), (1, 2)))
-
+    print(conjcplx((7),-8))
+    print (modcplx(5,-6))
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
